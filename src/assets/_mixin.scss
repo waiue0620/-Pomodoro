@@ -1,0 +1,15 @@
+@mixin radius-outline($color, $size, $width) {
+  width: $size;
+	height: $size;
+	line-height: $size;
+	border: $width solid $color;
+	border-radius: 50%;
+}
+
+@mixin radius($color, $size) {
+  width: $size;
+	height: $size;
+  line-height: $size;
+  background-color: $color;
+	border-radius: 50%;
+}

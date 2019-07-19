@@ -1,0 +1,13 @@
+@import '~bootstrap/scss/functions';
+@import './helpers/variables';
+@import '~bootstrap/scss/bootstrap';
+
+@import './dashboard';
+@import './mixin';
+@import './main';
+
+.removeBox {
+  .list {
+    display: none;
+  }
+}

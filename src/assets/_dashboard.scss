@@ -1,0 +1,21 @@
+body {
+  font-family: "Roboto", sans-serif !important;
+  overflow: hidden;
+  text-transform:uppercase;
+  color: $secondary;
+  font-weight: 900;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 900;
+}
+
+::-webkit-input-placeholder { color:$primary; }
+::-moz-placeholder { color:$primary; } /* firefox 19+ */
+:-ms-input-placeholder { color:$primary; } /* ie */
+input:-moz-placeholder { color:$primary; }
+
+// 隱藏滾動條
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}

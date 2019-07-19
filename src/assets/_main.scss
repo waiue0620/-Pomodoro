@@ -1,0 +1,256 @@
+.container {
+  height: 100vh;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-move {
+  cursor: move;
+}
+
+
+.leftBlock {
+  flex: 0.64843;
+  height: 100vh;
+}
+.rightBlock {
+  flex: 0.35157;
+  height: 100vh;
+}
+// 播放
+.playMenu {
+  left: 100%;
+}
+.OuterCircle {
+  width: 340px;
+  height: 340px;
+  border: 4px solid $primary;
+  transform: translate(-50%);
+  @media (min-width: 992px) {
+  width: 440px;
+  height: 440px;
+  }
+  @media (min-width: 1200px) {
+    width: 540px;
+    height: 540px;
+    }
+}
+.InnerCircle {
+  width: 310px;
+  height: 310px;
+  @media (min-width: 992px) {
+    width: 410px;
+    height: 410px;
+  }
+  @media (min-width: 1200px) {
+    width: 510px;
+    height: 510px;
+  }
+}
+
+.InnerCircle2 {
+  width: 96px;
+  height: 96px;
+}
+.playCircle {
+  font-size: 110px;
+  color: #fff;
+  margin-left: 19px;
+}
+.stop {
+  margin-top: 86px;
+}
+// menu
+.textColumn {
+  writing-mode: vertical-lr;
+  margin: 0;
+  font-family: 'Futura';
+  transform: translateY(290%);
+}
+.menu {
+  top: -60%;
+  left: 110%;
+  @media (min-width: 992px) {
+    top: -40%;
+  }
+  @media (min-width: 1200px) {
+  top: -20%;
+  }
+}
+.menu-icons {
+  font-size: 2rem;
+}
+
+// todo
+.todo {
+  max-width: 445px;
+  width: 100%;
+  transform: translate(-25%);
+}
+
+.input {
+  width: 100%;
+  height: 56px;
+}
+.inputIcons {
+  padding: 14px;
+  transform: translate(392px, -53px);
+}
+
+.done {
+  @include radius-outline($secondary, 48px, 2px);
+  &-md {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+  }
+  &-sm {
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+  }
+  &-white {
+    border-color: #fff;
+  }
+}
+.notDoneTomato {
+  @include radius-outline($primary, 12px, 1px);
+}
+
+.time {
+  font-size: 176px;
+  margin-bottom: 100px;
+}
+.missionList {
+  border-bottom: 1px solid rgba($secondary, 0.2)
+}
+
+
+// modal
+.modal-dialog {
+  margin: 0;
+  max-width: none;
+}
+.modal-content {
+  border: 0;
+  border-radius: 0;
+  height: 100vh;
+  background-color: $secondary;
+  color: #fff;
+  overflow: hidden;
+}
+.modal {
+  .textColumn {
+    transform: translateY(0);
+  }
+  .missionList {
+    border-bottom: 1px solid rgba(#fff, 0.2)
+  }
+  .menu-text {
+    font-size: 36px;
+    color: rgba(#fff, 0.2);
+    margin-bottom: 42px;
+  }
+  .active {
+    color: $primary;
+  }
+}
+.fs48 {
+  font-size: 48px;
+}
+
+.whiteOpacity20 {
+  background-color: rgba(#fff, 0.2);
+}
+.doneIcons {
+  font-size: 16px;
+  padding-left: 1.5px;
+  
+}
+.collapsed {
+  .rotate180{
+    transform:rotate(-180deg);
+  }
+}
+
+.transition {
+  transition: transform 0.3s;
+}
+
+// modal menu
+.menuCircle {
+  @include radius($primaryLight, 350px);
+  font-size: 64px;
+  line-height: 1.5;
+}
+.menuCircleDisp {
+  top: 100%;
+  transform: translateY(-50%);
+}
+
+.menuplayCircle {
+  @include radius($secondary, 116px);
+}
+.menuouterCircle {
+  @include radius-outline($primary, 104px, 2px);
+}
+.menuinnerCircle {
+  @include radius($primary, 90px);
+  i {
+    font-size: 110px;
+  }
+}
+.menuplayCircleDisp {
+  bottom: 100%;
+  transform: translateY(50%);
+}
+
+.text-white20{
+  color: rgba(#fff, 0.2);
+}
+
+// 休息
+.rest {
+  .bg-primaryLight {
+    background-color: #E5F3FF !important;
+  }
+  .text-primary {
+    color: #00A7FF !important;
+  }
+  .bg-primary {
+    background-color: #00A7FF !important;
+  }
+  .border-primary {
+    border-color: #00A7FF !important;
+  }
+  ::-webkit-input-placeholder { color:#00A7FF; }
+  ::-moz-placeholder { color:#00A7FF; } /* firefox 19+ */
+  :-ms-input-placeholder { color:#00A7FF; } /* ie */
+  input:-moz-placeholder { color:#00A7FF; }
+  .start {
+    background-color: #fff !important;
+    border: 4px solid #00A7FF;
+  }
+  .svg {
+    circle {
+      stroke: #00A7FF;
+    }
+  }
+  .menuouterCircle {
+    border: 2px solid #00A7FF;
+  }
+}
+
+.start {
+  background-color: #fff !important;
+  border: 4px solid $primary;
+}
+
+
+
+// 進度條
+.svg {
+  transform:rotate(-90deg);
+  z-index: -1
+}
